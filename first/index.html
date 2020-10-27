@@ -1,14 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Musholla Al Amin</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
+      name="Musholla Al Amin"
     />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      h1 {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      ul.b {
+        list-style-type: square;
+      }
+      div.full {
+        height: "600px";
+
+      }
+    </style>
+    <script text="javascript">
+      function pageheader() {
+        var strHTML="";
+        strHTML ="<div class='w3-container w3-center'><h1 onclick='alert(\"test\");'>Musholla Al Amin</h1></div>";
+        document.getElementById('PageHeader').innerHTML=strHTML;
+      }
+      function sidemenu() {
+        var strHTML="";
+        strHTML +="<div>";
+        strHTML +="<ul class='b'>";
+        strHTML +="<li onclick='pagecontent();'>Halaman Utama</li>";
+        strHTML +="<li onclick='window.open(\"https://www.google.com/maps/place/Musholla+Al-Amin/@-6.3831047,106.8938237,15z/data=!4m5!3m4!1s0x0:0x56f37e721e60dd28!8m2!3d-6.3831047!4d106.8938237?hl=en\",\"_blank\");'>Lokasi</li>";
+        strHTML +="<li onclick='pembangunan();'>Pembangunan</li>";
+        strHTML +="<li onclick='lumbungpangan();'>Lumbung Pangan</li>";
+        strHTML +="<li onclick='pendidikan();'>Pendidikan</li>";
+        strHTML +="<li onclick='kurban();'>Kurban</li>";
+        strHTML +="</ul>";        
+        strHTML +="</div>";
+        document.getElementById('SideMenu').innerHTML=strHTML;
+      }
+      function pagecontent() {
+        var strHTML="";
+        strHTML += "<div>";
+        strHTML += "<img src='multimedia\\alamin.jpg' style='height: 600px; width:100%'>";
+        strHTML += "</div>";
+
+        document.getElementById('PageContent').innerHTML=strHTML;
+      }
+      function pembangunan() {
+        var strHTML="";
+        strHTML += "<div class='w3-row' style='width:100%;'>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%' src='multimedia\\pembangunan\\001.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%' src='multimedia\\pembangunan\\002.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "</div>";
+        strHTML += "<div class='w3-row' style='width:100%;'>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%' src='multimedia\\pembangunan\\003.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%'src='multimedia\\pembangunan\\004.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "</div>";
+        document.getElementById('PageContent').innerHTML=strHTML;
+      }
+      function lumbungpangan() {
+        var strHTML="";
+        strHTML += "<div>";
+        strHTML += "<embed style='height: 600px; width:100%' src='multimedia\\lumbungpangan\\konsep.pdf' type='application/pdf' />";        
+        strHTML += "</div>";
+        document.getElementById('PageContent').innerHTML=strHTML;
+      }
+      function pendidikan() {
+        var strHTML="";
+        strHTML += "<div>";
+        strHTML += "<embed style='height: 600px; width:100%' src='multimedia\\pendidikan\\konsep.pdf' type='application/pdf' />";        
+        strHTML += "</div>";
+        document.getElementById('PageContent').innerHTML=strHTML;
+      }
+      function kurban() {
+        var strHTML="";
+        strHTML += "<div class='w3-row' style='width:100%;'>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%' src='multimedia\\kurban\\001.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%' src='multimedia\\kurban\\002.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "</div>";
+        strHTML += "<div class='w3-row' style='width:100%;'>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%' src='multimedia\\kurban\\003.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "<div class='w3-col l6 m6 s12'>";
+        strHTML += "<img style='width:100%'src='multimedia\\kurban\\004.jpg' style='width:100;' />";
+        strHTML += "</div>";
+        strHTML += "</div>";
+        document.getElementById('PageContent').innerHTML=strHTML;
+      }      
+    </script>
+
   </head>
   <body style="width:fit-content; align-content: center;">
-    <div>Thanduran</div>
+    <div id="PageHeader">Init</div>
+    <div class="w3-row">
+      <div id="SideMenu" class="w3-col l3 m6 s12"></div>
+      <div id="PageContent" class="w3-col l9 m6 s12"></div>
+    </div>
+	  <script>
+  		pageheader();
+      sidemenu();
+      pagecontent();
+    </script>
   </body>
 </html>
