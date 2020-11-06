@@ -1,2 +1,0 @@
-(this["webpackJsonptest-publish"]=this["webpackJsonptest-publish"]||[]).push([[0],{3:function(e,t,n){e.exports=n(9)},9:function(e,t,n){"use strict";n.r(t);var l=n(0),r=n.n(l),a=n(2);var s=function(){return r.a.createElement("h1",null,"Hello World from React boilerplate")};n.n(a).a.render(r.a.createElement(s,null),document.getElementById("apptitle"))}},[[3,1,2]]]);
-//# sourceMappingURL=main.c243fcb2.chunk.js.map
